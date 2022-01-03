@@ -83,7 +83,7 @@ namespace Homework_1_on_CSharp
                 Console.ForegroundColor = ConsoleColor.Red;
             for (int i = 0; i < digital.Length; i++)
             {
-                digital[i] = rar.Next(2300, 2400);
+                digital[i] = rar.Next(1500, 4500);
                 if (digital[i] > serednia)
                 {
                     counter++;
@@ -137,7 +137,7 @@ namespace Homework_1_on_CSharp
                 Console.ForegroundColor = ConsoleColor.Red;
                 for (int i = 0; i < digital.Length; i++)
                 {
-                    digitalForTwoGroup[i] = rar.Next(2300, 2400);
+                    digitalForTwoGroup[i] = rar.Next(1500, 4500);
                     if (digitalForTwoGroup[i] > serednia)
                     {
                         counter++;
@@ -178,6 +178,7 @@ namespace Homework_1_on_CSharp
                     }
                 }
                 Console.WriteLine();
+                Console.ForegroundColor = ConsoleColor.DarkMagenta;
                 Console.WriteLine("Sort: ");
                 Array.Sort(digitalForTwoGroup);
                 for (int i = 0; i < digitalForTwoGroup.Length; i++)
@@ -189,7 +190,7 @@ namespace Homework_1_on_CSharp
                 }
             }
 
-
+            Console.ResetColor();
 
         }
 
