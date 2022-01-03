@@ -68,17 +68,17 @@ namespace Homework_1_on_CSharp
             int lenght = digital.Length;
             Console.Write("Input year: ");
             uint year = uint.Parse(Console.ReadLine());
-            Console.Write("Input seredniy Salary: ");
+            Console.Write("Input average salary: ");
             int serednia = int.Parse(Console.ReadLine());
             Console.WriteLine();
             int lopa = 1;
             uint counter = 0;
             Console.ForegroundColor = ConsoleColor.Blue;
-            Console.WriteLine("                                                   -- FOR 1 GROUP: --");
+            Console.WriteLine(new string(' ', 60) + "-- for 1 group: --".ToUpper());
             for (int m = 0; m < year; m++)
            {
                 Console.ForegroundColor = ConsoleColor.Cyan;
-                Console.WriteLine($"--------------- For {m+1} year: --------------");
+                Console.WriteLine(new string ('-',20)+$" For {m+1} year: ".ToUpper() + new string('-', 20));
                 Console.WriteLine();
                 Console.ForegroundColor = ConsoleColor.Red;
             for (int i = 0; i < digital.Length; i++)
@@ -114,7 +114,7 @@ namespace Homework_1_on_CSharp
                 Example3(ref digital, serednia, counter, lenght);
                 Console.ForegroundColor = ConsoleColor.Green;
                 Console.WriteLine($"More than {serednia} $ is: ");
-                Console.WriteLine("--------------------------");
+                Console.WriteLine(new string('-',25));
                 for (int i = 0; i < digital.Length; i++)
                 {
                     if (digital[i] > 0)
@@ -128,11 +128,11 @@ namespace Homework_1_on_CSharp
             int yey = 11;
             Console.WriteLine();
             Console.ForegroundColor = ConsoleColor.Blue;
-            Console.WriteLine("                                                     -- FOR 2 GROUP: --");
+            Console.WriteLine(new string(' ', 60) + "-- for 2 group: --".ToUpper());
             for (int m = 0; m < year; m++)
             {
                 Console.ForegroundColor = ConsoleColor.Cyan;
-                Console.WriteLine($"--------------- For {m + 1} year: --------------");
+                Console.WriteLine(new string('-', 20) + $" For {m + 1} year: ".ToUpper() + new string('-', 20));
                 Console.WriteLine();
                 Console.ForegroundColor = ConsoleColor.Red;
                 for (int i = 0; i < digital.Length; i++)
@@ -169,7 +169,7 @@ namespace Homework_1_on_CSharp
                 Example3(ref digitalForTwoGroup, serednia, counter, lenght);
                 Console.ForegroundColor = ConsoleColor.Green;
                 Console.WriteLine($"More than {serednia} $ is: ");
-                Console.WriteLine("--------------------------");
+                Console.WriteLine(new string('-', 25));
                 for (int i = 0; i < digitalForTwoGroup.Length; i++)
                 {
                     if (digitalForTwoGroup[i] > 0)
@@ -189,205 +189,6 @@ namespace Homework_1_on_CSharp
                 }
             }
 
-
-            ////
-            ///
-            //Console.WriteLine();
-            //Console.WriteLine("RESULT:");
-            //Console.WriteLine("---------------------");
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-            //1
-            //int lop = 0;
-            //string[][,] zalupa = new string[2][,];
-            //zalupa[0] = { }
-            //var lopa = 1;
-            ////int lop = 0;
-            //const sbyte count = 0;
-            //Random run = new Random();
-
-            //for (int i = 0; i < 2; i++)
-            //{
-            //    for (int two = 0; two < 5; two++)
-            //    {
-            //        for (int three = 0; three < 5; three++)
-            //        {
-            //            zalupa[i][two, three] = "00";
-
-            //        }
-            //    }
-            //}
-            //for (int l = 0; l < 5; l++)
-            //{
-            //    for (int p = 0; p < 4; p++)
-            //    {
-            //        lop = run.Next(2100, 2500);
-            //        string strforArray = Convert.ToString(lop);
-            //        zalupa[count][l, p] = strforArray;
-
-
-            //    }
-            //}
-
-            //for (int l = 0; l < 5; l++)
-            //{
-            //    for (int p = 0; p < 4; p++)
-            //    {
-            //        string str = Convert.ToString(lopa);
-            //        Name cast = (Name)Enum.Parse(typeof(Name), str, ignoreCase: true);
-            //        string vov = Convert.ToString(cast);
-            //        zalupa[1][l, p] = vov;
-            //        if (lopa < 18)
-            //        {
-            //            lopa++;
-            //        }
-            //        else
-            //        {
-            //            lopa = 1;
-            //        }
-            //    }
-            //}
-            //for (int l = 0; l < 5; l++)
-            //{
-            //    for (int p = 0; p < 4; p++)
-            //    {
-            //        Console.WriteLine(zalupa[1][l, p]);
-            //    }
-            //}
-
-
-
-
-
-
-
-
-
-
-
-            //2
-            //Console.WriteLine("Input year: ");
-            //uint yearWork = uint.Parse(Console.ReadLine());
-
-            //int workers = 10;
-            //var lopa = 1;
-            //string[,] hohol = new string[workers, workers];
-            //for (int i = 0; i < yearWork; i++)
-            //{
-
-
-            //    for (int i = 0; i < hohol.GetLength(0); i++)
-            //        for (int h = 0; h < hohol.GetLength(1); h++)
-            //        {
-
-            //            string str = Convert.ToString(lopa);
-            //            Name car = (Name)Enum.Parse(typeof(Name), str, ignoreCase: true);
-            //            string vov = Convert.ToString(car);
-            //            hohol[i, h] = vov;
-            //            if (lopa < 18)
-            //            {
-            //                lopa++;
-            //            }
-            //            else
-            //            {
-            //                lopa = 1;
-            //            }
-            //        }
-            //}
-            //Console.WriteLine("_______________________");
-            //Console.WriteLine("NAMES:   ");
-            //Console.WriteLine("_______________________");
-            //for (int i = 0; i < hohol.GetLength(0); i++)
-            //    for (int h = 0; h < hohol.GetLength(1); h++)
-            //    {
-            //        Console.WriteLine(hohol[i, h]);
-            //        Console.WriteLine("-");
-            //    }
-            //Console.WriteLine();
-
-
-
-
-
-
-
-
-
-            //main
-            //    Console.Write("Input year: ");
-            //    int yearWork = int.Parse(Console.ReadLine());
-            //    Console.Write("Input number of people group 1: ");
-            //    uint CountOfWorker1 = uint.Parse(Console.ReadLine());
-            //    Console.Write("Input number of people group 2: ");
-            //    uint CountOfWorker2 = uint.Parse(Console.ReadLine());
-
-            //    int[,] ArrayOfOneGroup1 = new int[yearWork, CountOfWorker1];
-            //    int[,] ArrayOfOneGroup2 = new int[yearWork, CountOfWorker2];
-
-            //    Random ram = new Random();
-
-            //    Console.Write("Input average salary: ");
-            //    uint PaySalary = uint.Parse(Console.ReadLine());
-            //    Console.WriteLine("---------------------------------- ");
-            //    Console.ForegroundColor = ConsoleColor.Blue;
-            //    int counter = 0;
-            //    Console.WriteLine("Input salary of 1 group: ");
-            //    for (int i = 0; i < ArrayOfOneGroup1.GetLength(0); i++)
-            //    {
-            //        Console.WriteLine($"________ {i + 1} - year: __________");
-            //        for (int j = 0; j < ArrayOfOneGroup1.GetLength(1); j++)
-            //        {
-
-            //            ArrayOfOneGroup1[i, j] = ram.Next(2300, 2400);
-            //            Console.WriteLine($"{j + 1}-worker = {ArrayOfOneGroup1[i, j]}");
-            //            if (ArrayOfOneGroup1[i, j] > PaySalary)
-            //            {
-            //                counter++;
-            //            }
-            //        }
-
-            //    }
-            //sbyte numb1 = 1;
-            //    Formatting(numb:numb1,arrayposition: ArrayOfOneGroup1, seledniaplata: PaySalary, counterForFunction: counter, year: yearWork);
-            //    Console.WriteLine();
-
-
-            //    sbyte numb2 = 2;
-            //    counter = 0;
-            //    Console.ForegroundColor = ConsoleColor.Red;
-            //    Console.WriteLine("Input salary of 2 group: ");
-            //    for (int i = 0; i < ArrayOfOneGroup2.GetLength(0); i++)
-            //    {
-            //        Console.WriteLine($"________{i + 1} - year: __________");
-            //        for (int j = 0; j < ArrayOfOneGroup2.GetLength(1); j++)
-            //        {
-            //            ArrayOfOneGroup2[i, j] = ram.Next(2300, 2400);
-            //            Console.WriteLine($"{j + 1}-worker = {ArrayOfOneGroup2[i, j]}");
-            //            if (ArrayOfOneGroup2[i, j] > PaySalary)
-            //            {
-            //                counter++;
-            //            }
-
-            //        }
-            //    }
-            //    Formatting(numb:numb2,arrayposition: ArrayOfOneGroup2, seledniaplata: PaySalary, counterForFunction: counter, year: yearWork);
-
-            //    Console.WriteLine();
-            //    Console.WriteLine("Sorting Two Array: ");
 
 
         }
@@ -414,7 +215,7 @@ namespace Homework_1_on_CSharp
 
             for (int i = 0; i < sliv.GetLength(0) - 1; i++)
             {
-                Console.WriteLine($"_________________________For {i + 1} year: _____________________________");
+                Console.WriteLine(new string('_', 25) + $" For {i + 1} year : " + new string('_', 25));
                 for (int l = 0; l < sliv.GetLength(1); l++)
                 {
                     if (sliv[i, l] != 0)
@@ -425,7 +226,7 @@ namespace Homework_1_on_CSharp
             }
             for (int i = 1; i < sliv.GetLength(0); i++)
             {
-                Console.WriteLine($"_________________________For {i + 1} year: _____________________________");
+                Console.WriteLine(new string ('_',25)+$" For {i + 1} year : "+ new string('_', 25));
                 for (int l = 0; l < sliv.GetLength(1); l++)
                 {
                     if (sliv[i, l] != 0)
@@ -434,8 +235,6 @@ namespace Homework_1_on_CSharp
                     }
                 }
             }
-
-
             //arrayposition = sliv;
 
 
